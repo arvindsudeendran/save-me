@@ -1,0 +1,34 @@
+Use Case: Guess the random word
+
+Description:
+A player guess the random word provided by the system within certain number of attempts. The correct guess wins.
+
+Triggers:
+1. A player is offered with a random word to guess along with a hint.
+
+Actors:
+1. A player who makes the guess.
+2. Word - provides the random word from the defined word list.
+3. Save me! Game.
+
+Preconditions:
+1. One player is available.
+
+Goals:
+1. Player wins if he guess the random word within the given number of attempts.
+
+Steps of execution:
+1. The system randomly picks a word from the defined list of categories.
+2. The system provides the randomly picked word to the player along with category as a hint.
+3. The player guesses the random word from the given set of alphabets.
+4. The correct guess wins.
+5. Offer to try again with a new random word.
+
+Extensions:
+4a. Wrong guess
+	1. Display in the UI - bridge collapses for every wrong guess
+	2. Display in the UI - player falls into the river after the given number of attempts.
+	
+5a. All the words are guessed
+	1. Display a message in the UI - All words are guessed and stay tuned for more words.
+
